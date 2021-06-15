@@ -1,0 +1,2 @@
+title @a[tag=impostor] title {"text":"Tu es un imposteur !","bold":true,"color":"red"}
+title @a[tag=impostor] actionbar ["",{"text":"Votre mate est: "},{"selector":"@a[limit=1,sort=furthest,tag=impostor]"}]
