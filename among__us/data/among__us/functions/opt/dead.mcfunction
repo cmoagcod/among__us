@@ -1,0 +1,2 @@
+gamemode spectator @a[tag=dead]
+execute as @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'}] at @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'}] run tp @a[distance=100.., limit=1, tag=dead] @s
