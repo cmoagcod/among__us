@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,nbt={CustomName:'{"text":"Light"}'}] at @s run setblock ~ ~ ~ redstone_block
