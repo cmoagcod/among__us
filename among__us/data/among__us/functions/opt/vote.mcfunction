@@ -4,7 +4,7 @@ execute if score @a[limit=1] voteTimer matches 1 run title @a subtitle "Fin des 
 execute if score @a[limit=1] voteTimer matches 1 run tp @a[tag=player] @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'},limit=1]
 execute if score @a[limit=1] voteTimer matches 1 run function among__us:roles/impostor
 execute if score @a[limit=1] voteTimer matches 1 run function among__us:roles/crewmate
-execute if score @a[limit=1] voteTimer matches 1 run scoreboard players reset @a killCd
+execute if score @a[limit=1] voteTimer matches 1.. run scoreboard players reset @a killCd
 
 execute if score @a[limit=1] voteTimer matches 1.. run tp @a[team=blue] @e[type=armor_stand,nbt={CustomName:'{"text":"blue"}'},limit=1]
 execute if score @a[limit=1] voteTimer matches 1.. run tp @a[team=green] @e[type=armor_stand,nbt={CustomName:'{"text":"green"}'},limit=1]
