@@ -2,6 +2,7 @@ tellraw @a {"text":"§8§l > §6§l[among__us] §8§l< §7Datapack (re)loaded !"
 scoreboard objectives add carrotStick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add killCd dummy
 scoreboard objectives add count dummy
+scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
 team add blue
 team modify blue color blue
 team add green

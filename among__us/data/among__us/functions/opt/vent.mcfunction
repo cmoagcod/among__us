@@ -1,0 +1,6 @@
+execute at @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a1"}'}] as @a[tag=impostor, scores={sneak=1..}, distance=..1.5] run tp @s @e[type=armor_stand,nbt={CustomName:'{"text":"vent_lobby_a"}'}, limit=1]
+execute at @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a2"}'}] as @a[tag=impostor, scores={sneak=1..}, distance=..1.5] run tp @s @e[type=armor_stand,nbt={CustomName:'{"text":"vent_lobby_a"}'}, limit=1]
+execute at @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a3"}'}] as @a[tag=impostor, scores={sneak=1..}, distance=..1.5] run tp @s @e[type=armor_stand,nbt={CustomName:'{"text":"vent_lobby_a"}'}, limit=1]
+execute at @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a1b"}'}] as @a[tag=impostor, scores={sneak=1..}, distance=..1.5] run tp @s @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a1"}'}, limit=1]
+execute at @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a2b"}'}] as @a[tag=impostor, scores={sneak=1..}, distance=..1.5] run tp @s @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a2"}'}, limit=1]
+execute at @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a3b"}'}] as @a[tag=impostor, scores={sneak=1..}, distance=..1.5] run tp @s @e[type=armor_stand,nbt={CustomName:'{"text":"vent_a3"}'}, limit=1]
