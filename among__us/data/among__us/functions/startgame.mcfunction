@@ -1,10 +1,21 @@
 tag @a remove player
 gamemode adventure @a
 function among__us:main
-execute as @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'}] at @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'}] run tag @r[limit=10, distance=..20] add player
-tp @a[limit=10, tag=player] @e[type=armor_stand,nbt={CustomName:'{"text":"Spawn"}'}, limit=1]
+execute as @e[type=armor_stand,nbt={CustomName:'{"text":"Spawn"}'}] at @e[type=armor_stand,nbt={CustomName:'{"text":"Spawn"}'}] run tag @r[limit=10, distance=..20] add player
+tp @a[limit=10, tag=player] @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'}, limit=1]
 tag @r[limit=2, tag=player] add impostor
 function among__us:roles/impostor
 tag @a[tag=player, tag=!impostor] add crewmate
 function among__us:roles/crewmate
 scoreboard players reset @a killCd
+
+team join blue @r[tag=player,limit=1]
+team join green @r[tag=player,limit=1]
+team join gray @r[tag=player,limit=1]
+team join pink @r[tag=player,limit=1]
+team join purpule @r[tag=player,limit=1]
+team join red @r[tag=player,limit=1]
+team join black @r[tag=player,limit=1]
+team join white @r[tag=player,limit=1]
+team join yellow @r[tag=player,limit=1]
+team join gold @r[tag=player,limit=1]

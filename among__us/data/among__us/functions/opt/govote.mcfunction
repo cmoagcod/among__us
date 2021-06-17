@@ -1,0 +1,1 @@
+tp @a[tag=player] @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'},limit=1]

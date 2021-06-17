@@ -1,0 +1,5 @@
+item replace entity @a[tag=player,tag=!dead] hotbar.4 with minecraft:air
+execute as @e[type=armor_stand,nbt={CustomName:'{"text":"dead_body"}'}] at @e[type=armor_stand,nbt={CustomName:'{"text":"dead_body"}'}] run item replace entity @a[tag=player,tag=!dead,distance=..6] hotbar.4 with minecraft:carrot_on_a_stick{display:{Name:'[{"text":"REPORT","bold":true,"color":"green"}]'}}
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"REPORT","bold":true,"color":"green"}]'}}}},scores={carrotStick=1..}] at @s run title @a title ["",{"selector":"@s","color":"red"},{"text":" a trouvé un corps !","color":"red"}]
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"REPORT","bold":true,"color":"green"}]'}}}},scores={carrotStick=1..}] at @s run kill @e[nbt={CustomName:'{"text":"dead_body"}'},distance=..6]
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"REPORT","bold":true,"color":"green"}]'}}}},scores={carrotStick=1..}] at @s run function among__us:opt/govote
