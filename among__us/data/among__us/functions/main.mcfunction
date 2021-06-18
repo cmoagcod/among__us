@@ -23,3 +23,4 @@ execute if score crewmates count matches 100 run function among__us:opt/impwin
 execute if score tasks count matches 35.. run function among__us:opt/crewwin
 
 scoreboard players reset @a sneak
+scoreboard players reset @a bookUsed
