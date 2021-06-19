@@ -1,5 +1,11 @@
 tag @a remove player
 tag @a remove dead
+scoreboard players reset @a killCd
+scoreboard players set @a buzzCd 600
+scoreboard players reset @a o2Time
+scoreboard players reset @a o2
+scoreboard players reset @a count
+scoreboard players reset tasks count
 gamemode adventure @a
 function among__us:main
 execute as @e[type=armor_stand,nbt={CustomName:'{"text":"Spawn"}'}] at @e[type=armor_stand,nbt={CustomName:'{"text":"Spawn"}'}] run tag @r[limit=10, distance=..20] add player
@@ -8,12 +14,6 @@ tag @r[limit=2, tag=player] add impostor
 function among__us:roles/impostor
 tag @a[tag=player, tag=!impostor] add crewmate
 function among__us:roles/crewmate
-scoreboard players reset @a killCd
-scoreboard players set @a buzzCd 600
-scoreboard players reset @a tasks
-scoreboard players reset @a o2Time
-scoreboard players reset @a o2
-scoreboard players reset @a count
 
 team join blue @r[tag=player,limit=1]
 team join green @r[tag=player,limit=1]

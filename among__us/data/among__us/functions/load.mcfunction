@@ -16,13 +16,13 @@ scoreboard objectives setdisplay belowName vote
 
 bossbar add o2 {"text":"Oxygène:","color":"red","bold":true}
 bossbar set minecraft:o2 players @a
-bossbar set minecraft:o2 style notched_10
+bossbar set minecraft:o2 style progress
 bossbar set minecraft:o2 color red
 bossbar set minecraft:o2 max 30
 
 bossbar add tasksbar {"text":"Quêtes complétés:","color":"green","bold":true}
 bossbar set minecraft:tasksbar players @a
-bossbar set minecraft:tasksbar style progress
+bossbar set minecraft:tasksbar style notched_20
 bossbar set minecraft:tasksbar color green
 bossbar set minecraft:tasksbar max 35
 

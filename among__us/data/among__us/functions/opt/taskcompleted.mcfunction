@@ -1,0 +1,1 @@
+scoreboard players add tasks count 1
