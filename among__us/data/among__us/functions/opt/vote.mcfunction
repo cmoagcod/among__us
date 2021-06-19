@@ -1,6 +1,7 @@
 execute if score @a[limit=1] voteTimer matches 200 run title @a title "Il reste 10 secondes"
 execute if score @a[limit=1] voteTimer matches 100 run title @a title "Il reste 5 secondes"
 execute if score @a[limit=1] voteTimer matches 1 run title @a subtitle "Fin des votes."
+execute if score @a[limit=1] voteTimer matches 1.. run scoreboard players remove @a o2Cd 1
 execute if score @a[limit=1] voteTimer matches 1 run tp @a[tag=player] @e[type=armor_stand,nbt={CustomName:'{"text":"Lobby"}'},limit=1]
 execute if score @a[limit=1] voteTimer matches 1 run function among__us:roles/impostor
 execute if score @a[limit=1] voteTimer matches 1 run function among__us:roles/crewmate

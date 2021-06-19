@@ -8,9 +8,12 @@ tag @r[limit=2, tag=player] add impostor
 function among__us:roles/impostor
 tag @a[tag=player, tag=!impostor] add crewmate
 function among__us:roles/crewmate
-scoreboard players set @a killCd 600
+scoreboard players reset @a killCd
 scoreboard players set @a buzzCd 600
 scoreboard players reset @a tasks
+scoreboard players reset @a o2Time
+scoreboard players reset @a o2
+scoreboard players reset @a count
 
 team join blue @r[tag=player,limit=1]
 team join green @r[tag=player,limit=1]

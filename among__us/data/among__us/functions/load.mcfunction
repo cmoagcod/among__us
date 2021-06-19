@@ -7,9 +7,24 @@ scoreboard objectives add count dummy
 scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add voteTimer dummy
 scoreboard objectives add vote dummy
+scoreboard objectives add o2 dummy
+scoreboard objectives add o2Time dummy
+scoreboard objectives add o2Cd dummy
 
 scoreboard objectives setdisplay list vote
 scoreboard objectives setdisplay belowName vote
+
+bossbar add o2 {"text":"Oxygène:","color":"red","bold":true}
+bossbar set minecraft:o2 players @a
+bossbar set minecraft:o2 style notched_10
+bossbar set minecraft:o2 color red
+bossbar set minecraft:o2 max 30
+
+bossbar add tasksbar {"text":"Quêtes complétés:","color":"green","bold":true}
+bossbar set minecraft:tasksbar players @a
+bossbar set minecraft:tasksbar style progress
+bossbar set minecraft:tasksbar color green
+bossbar set minecraft:tasksbar max 35
 
 team add blue
 team modify blue color blue
